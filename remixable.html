@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Remixable, an all-in-one platform for website creation, customizable templates, marketing videos, branding and digital software tools.">
+  <meta name="theme-color" content="#101827">
+  <title>Remixable | Build, Customize & Create</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .hero {
+      padding: 26px 20px 76px;
+      color: #fff;
+      background:
+        radial-gradient(ellipse at top right,
+          rgba(76, 116, 255, .28), transparent 48%),
+        linear-gradient(145deg, #101827, #192744 65%, #253a62);
+    }
+
+    .nav {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -.7px;
+    }
+
+    .brand span {
+      color: #91b4ff;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: 78px auto 0;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 30px;
+      background: rgba(255,255,255,.07);
+      color: #c4d5ff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 24px 0 20px;
+      font-size: clamp(36px, 7vw, 62px);
+      line-height: 1.1;
+      letter-spacing: -1.8px;
+    }
+
+    .hero-content p {
+      max-width: 680px;
+      margin: 0 auto;
+      color: #d0d8e8;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 9px;
+      background: #7ca5ff;
+      color: #101827;
+      text-decoration: none;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 800;
+      transition: transform .2s, background .2s;
+    }
+
+    .button:hover {
+      background: #a3c0ff;
+      transform: translateY(-2px);
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: #172033;
+      border: 1px solid #dbe2ee;
+    }
+
+    .hero .button {
+      margin-top: 30px;
+    }
+
+    .hero-note {
+      margin-top: 14px;
+      color: #b6c4dc;
+      font-size: 12px;
+    }
+
+    .section {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 14px;
+      font-size: clamp(27px, 5vw, 39px);
+      line-height: 1.2;
+      letter-spacing: -.8px;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: #687287;
+      font-size: 16px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .feature {
+      padding: 26px 23px;
+      border: 1px solid #e3e8f1;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(25, 42, 75, .04);
+    }
+
+    .feature-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      background: #edf2ff;
+      color: #3459b8;
+      font-size: 23px;
+    }
+
+    .feature h3 {
+      margin: 0 0 9px;
+      font-size: 19px;
+    }
+
+    .feature p {
+      margin: 0;
+      color: #687287;
+      font-size: 14px;
+    }
+
+    .workflow {
+      background: #fff;
+      border-top: 1px solid #e9edf5;
+      border-bottom: 1px solid #e9edf5;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 17px;
+      border-radius: 50%;
+      background: #e7edff;
+      color: #3459b8;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .step h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .step p {
+      margin: 0;
+      color: #687287;
+      font-size: 14px;
+    }
+
+    .cta-panel {
+      padding: 48px 28px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #172440, #263e69);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta-panel h2 {
+      margin: 0 0 14px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.2;
+    }
+
+    .cta-panel p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #d0d8e8;
+    }
+
+    .cta-panel .button {
+      margin-top: 25px;
+    }
+
+    .disclosure {
+      max-width: 780px;
+      margin: 26px auto 0;
+      color: #6c7688;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    footer {
+      padding: 26px 20px;
+      background: #101827;
+      color: #b8c2d3;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    footer a {
+      color: #c8d8ff;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        padding-bottom: 58px;
+      }
+
+      .hero-content {
+        margin-top: 58px;
+      }
+
+      .features,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .feature {
+        padding: 23px;
+      }
+
+      .section {
+        padding: 54px 18px;
+      }
+
+      .cta-panel {
+        padding: 38px 22px;
+      }
+
+      .nav-link {
+        font-size: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="brand">Remix<span>able</span></div>
+      <a class="nav-link"
+         href="https://remixable.net/digistore24/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Affiliate Support
+      </a>
+    </nav>
+
+    <div class="hero-content">
+      <span class="eyebrow">Create · Customize · Launch</span>
+
+      <h1>A Smarter Way to Build Your Digital Projects</h1>
+
+      <p>
+        Explore Remixable, an all-in-one platform designed to help
+        you create websites, customize content, develop marketing
+        videos and explore digital product opportunities from one place.
+      </p>
+
+      <a class="button"
+         href="https://www.digistore24.com/redir/467549/johnpr/"
+         target="_blank"
+         rel="nofollow sponsored noopener">
+        Explore Remixable →
+      </a>
+
+      <div class="hero-note">
+        Review the official offer, available features and terms.
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-heading">
+        <h2>Explore the Main Tools</h2>
+        <p>
+          Discover a range of tools intended to support different
+          stages of creating and presenting digital products.
+        </p>
+      </div>
+
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">▤</div>
+          <h3>Website Creation</h3>
+          <p>
+            Explore website and page-building tools, templates and
+            customizable content for your online projects.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">✎</div>
+          <h3>Content & Branding</h3>
+          <p>
+            Work with content templates and tools for creating
+            branding materials such as logos and digital covers.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">▶</div>
+          <h3>Video & Voice</h3>
+          <p>
+            Explore browser-based video creation and voice-over
+            features for marketing and content projects.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">⌘</div>
+          <h3>Software Tools</h3>
+          <p>
+            Review the software-building and product-packaging
+            features described in the official offer.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">▦</div>
+          <h3>Ready-Made Resources</h3>
+          <p>
+            Explore available niche content, templates and media
+            intended to help you get started with a project.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">↗</div>
+          <h3>Digital Business Projects</h3>
+          <p>
+            Bring website creation, content development and
+            product presentation together in one workflow.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow">
+      <div class="section">
+        <div class="section-heading">
+          <h2>A Practical Starting Point</h2>
+          <p>
+            Review the platform before deciding whether it fits
+            your needs and the way you prefer to work.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Explore</h3>
+            <p>
+              Review the tools, examples and features presented
+              on the official website.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Evaluate</h3>
+            <p>
+              Check the current pricing, plan details, included
+              features and any recurring charges.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Decide</h3>
+            <p>
+              Choose whether the available tools and terms
+              match your project requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-panel">
+        <h2>Ready to Explore Remixable?</h2>
+        <p>
+          Visit the official offer to see the current product
+          information, available plans and terms before making
+          your decision.
+        </p>
+
+        <a class="button"
+           href="https://www.digistore24.com/redir/467549/johnpr/"
+           target="_blank"
+           rel="nofollow sponsored noopener">
+          Visit the Official Offer →
+        </a>
+      </div>
+
+      <p class="disclosure">
+        Affiliate disclosure: This page contains affiliate links.
+        I may earn a commission if you make a purchase through
+        these links, at no additional cost to you.
+        Product features, availability and pricing are determined
+        by the provider and may change.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Independent promotional page. Not the official Remixable website.
+    </p>
+    <p>
+      <a href="https://remixable.net/digistore24/"
+         target="_blank"
+         rel="noopener noreferrer">Affiliate Support</a>
+      &nbsp;·&nbsp;
+      <a href="https://remixable.net/join/"
+         target="_blank"
+         rel="noopener noreferrer">Official Sales Page</a>
+    </p>
+  </footer>
+
+</body>
+  </html>
+  
