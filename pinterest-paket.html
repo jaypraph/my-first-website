@@ -1,0 +1,816 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7828a0">
+
+  <title>Pinterest für Anfänger lernen – Pinterest Paket & Anleitung</title>
+
+  <meta name="description" content="Pinterest lernen leicht gemacht: Entdecke eine praktische Pinterest Anleitung mit Workbook, Pin Vorlagen und Tipps für deine Pinterest Strategie.">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Pinterest für Anfänger – Das Pinterest Paket">
+  <meta property="og:description" content="Lerne Pinterest Marketing, plane deine Inhalte und gestalte Pins mit praktischen Vorlagen.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --purple: #7828a0;
+      --purple-dark: #481464;
+      --pink: #f1dfff;
+      --cream: #fffaf6;
+      --ink: #292231;
+      --muted: #6d6474;
+      --white: #ffffff;
+      --border: #eadfee;
+      --green: #276749;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.7;
+      overflow-wrap: break-word;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 15px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--purple-dark);
+      letter-spacing: -0.3px;
+    }
+
+    .brand span {
+      color: var(--purple);
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 85% 15%, rgba(255,255,255,.18), transparent 35%),
+        linear-gradient(135deg, #481464 0%, #7828a0 58%, #9d48bc 100%);
+      color: var(--white);
+      padding: 76px 0 82px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,.35);
+      background: rgba(255,255,255,.1);
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .4px;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      letter-spacing: -.7px;
+    }
+
+    h1 {
+      font-size: clamp(2.35rem, 5vw, 3.8rem);
+      margin: 0 0 22px;
+    }
+
+    .hero p {
+      font-size: 1.08rem;
+      color: #f5eafa;
+      margin: 0 0 25px;
+    }
+
+    .hero strong {
+      color: white;
+    }
+
+    .cta {
+      display: inline-block;
+      text-decoration: none;
+      background: #ffffff;
+      color: var(--purple-dark);
+      padding: 15px 23px;
+      border-radius: 9px;
+      font-weight: 800;
+      text-align: center;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 8px 22px rgba(28, 7, 39, .15);
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(28, 7, 39, .22);
+    }
+
+    .cta-primary {
+      color: white;
+      background: var(--purple);
+      box-shadow: none;
+    }
+
+    .hero .cta-primary {
+      background: white;
+      color: var(--purple-dark);
+    }
+
+    .small-note {
+      font-size: .82rem !important;
+      opacity: .9;
+      margin-top: 15px !important;
+    }
+
+    .visual {
+      position: relative;
+      padding: 15px;
+    }
+
+    .mockup {
+      background: #fff;
+      color: var(--ink);
+      border-radius: 20px;
+      padding: 25px;
+      transform: rotate(1.5deg);
+      box-shadow: 0 22px 60px rgba(27, 7, 38, .25);
+    }
+
+    .mockup-label {
+      color: var(--purple);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .mockup h2 {
+      font-size: 1.8rem;
+      margin: 12px 0;
+    }
+
+    .mockup p {
+      color: var(--muted);
+      font-size: .92rem;
+      margin: 0 0 20px;
+    }
+
+    .pin-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .pin {
+      min-height: 135px;
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .pin small {
+      font-size: .68rem;
+      font-weight: 600;
+      opacity: .85;
+    }
+
+    .pin-one {
+      color: #fff;
+      background: linear-gradient(150deg, #70268f, #b76bd0);
+    }
+
+    .pin-two {
+      color: #43204f;
+      background: linear-gradient(150deg, #f6e9ff, #dfb9ef);
+    }
+
+    .pin-three {
+      color: #43204f;
+      background: linear-gradient(150deg, #ffe7d6, #f4c9a9);
+    }
+
+    .pin-four {
+      color: #fff;
+      background: linear-gradient(150deg, #4b205e, #80519a);
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 740px;
+      margin: 0 auto 38px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(1.8rem, 4vw, 2.65rem);
+      margin: 0 0 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 25px;
+    }
+
+    .card-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      background: var(--pink);
+      color: var(--purple-dark);
+      border-radius: 12px;
+      font-size: 1.35rem;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+      font-size: .96rem;
+    }
+
+    .soft-section {
+      background: #f5ebfa;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 45px;
+    }
+
+    .content-grid h2 {
+      font-size: clamp(1.8rem, 4vw, 2.55rem);
+      margin: 0 0 18px;
+    }
+
+    .content-grid p {
+      color: var(--muted);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 22px 0;
+    }
+
+    .check-list li {
+      position: relative;
+      padding: 8px 0 8px 30px;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .resource-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .resource {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 19px;
+      border-radius: 13px;
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .resource-number {
+      flex: 0 0 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--purple);
+      color: white;
+      font-weight: 800;
+    }
+
+    .resource h3 {
+      font-size: 1.03rem;
+      margin: 0 0 5px;
+    }
+
+    .resource p {
+      color: var(--muted);
+      font-size: .91rem;
+      margin: 0;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .audience-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      background: white;
+      font-weight: 700;
+    }
+
+    .cta-section {
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #481464, #7828a0);
+      padding: 70px 0;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      max-width: 750px;
+      margin: 0 auto 18px;
+    }
+
+    .cta-section p {
+      color: #f2e5f8;
+      max-width: 680px;
+      margin: 0 auto 25px;
+    }
+
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .faq-item h3 {
+      font-size: 1.08rem;
+      margin: 0 0 9px;
+    }
+
+    .faq-item p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    footer {
+      background: #25152e;
+      color: #e9dced;
+      padding: 28px 0;
+      font-size: .83rem;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    .footer-brand {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        padding: 52px 0 58px;
+      }
+
+      .hero-grid,
+      .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .visual {
+        max-width: 440px;
+        margin: 0 auto;
+      }
+
+      .benefit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 54px 0;
+      }
+
+      .cta {
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 2.45rem;
+      }
+
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">PIN <span>WISE</span> · Pinterest Wissen & Strategie</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">PINTEREST LERNEN · SCHRITT FÜR SCHRITT</div>
+
+          <h1>Pinterest für Anfänger: Starte mit einer klaren Strategie</h1>
+
+          <p>
+            Du möchtest Pinterest besser verstehen, ansprechende Pins erstellen
+            und deine Inhalte strukturierter planen? Eine praktische Pinterest
+            Anleitung kann dir helfen, die Grundlagen kennenzulernen und deine
+            nächsten Schritte gezielter anzugehen.
+          </p>
+
+          <p>
+            Entdecke das Pinterest-Paket mit Guide, Workbook und editierbaren
+            Pin-Vorlagen – für einen strukturierteren Einstieg ins Pinterest Marketing.
+          </p>
+
+          <a class="cta cta-primary"
+             href="https://www.digistore24.com/redir/736588/johnpr/"
+             target="_blank" rel="nofollow sponsored noopener">
+            Pinterest-Paket entdecken →
+          </a>
+
+          <p class="small-note">
+            Digitale Lernmaterialien · Für Einsteiger und Content Creator
+          </p>
+        </div>
+
+        <div class="visual">
+          <div class="mockup">
+            <div class="mockup-label">Dein Pinterest Start</div>
+            <h2>Ideen. Struktur. Pins.</h2>
+            <p>
+              Ein übersichtlicher Einstieg in Pinterest Planung und Content-Erstellung.
+            </p>
+
+            <div class="pin-grid">
+              <div class="pin pin-one">
+                <small>01 · LERNEN</small>
+                Pinterest verstehen
+              </div>
+
+              <div class="pin pin-two">
+                <small>02 · PLANEN</small>
+                Content strukturieren
+              </div>
+
+              <div class="pin pin-three">
+                <small>03 · GESTALTEN</small>
+                Ideen visualisieren
+              </div>
+
+              <div class="pin pin-four">
+                <small>04 · UMSETZEN</small>
+                Pins vorbereiten
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="section-heading">
+          <h2>Pinterest Marketing verständlich angehen</h2>
+          <p>
+            Wer Pinterest lernen möchte, braucht nicht nur neue Ideen.
+            Hilfreich sind auch ein nachvollziehbarer Plan, passende Vorlagen
+            und ein klarer Überblick über die nächsten Schritte.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+
+          <article class="card">
+            <div class="card-icon">✦</div>
+            <h3>Pinterest Anleitung für Einsteiger</h3>
+            <p>
+              Beschäftige dich mit den Grundlagen von Pinterest und entwickle
+              ein besseres Verständnis dafür, wie du die Plattform für deine
+              eigenen Inhalte einsetzen kannst.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">▧</div>
+            <h3>Pinterest Vorlagen nutzen</h3>
+            <p>
+              Arbeite mit editierbaren Pin-Layouts als Ausgangspunkt für deine
+              eigenen Designs und eine einheitlichere visuelle Gestaltung.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">☷</div>
+            <h3>Einen Pinterest Content Plan entwickeln</h3>
+            <p>
+              Organisiere deine Ideen und plane deine Inhalte bewusster,
+              statt jedes Mal ohne Vorbereitung mit einem neuen Pin zu beginnen.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section">
+      <div class="container content-grid">
+
+        <div>
+          <h2>Was enthält das Pinterest-Paket?</h2>
+
+          <p>
+            Das digitale Lernpaket verbindet Informationen, praktische
+            Arbeitsblätter und Gestaltungsvorlagen. Es richtet sich an Menschen,
+            die sich mit Pinterest Marketing beschäftigen und ihre Vorgehensweise
+            strukturierter gestalten möchten.
+          </p>
+
+          <ul class="check-list">
+            <li>Ein Guide mit 53 Seiten</li>
+            <li>Ein Workbook mit sieben Arbeitsblättern</li>
+            <li>Sechs editierbare Pin-Layouts</li>
+            <li>Materialien zum Lernen, Planen und Umsetzen</li>
+          </ul>
+
+          <a class="cta cta-primary"
+             href="https://www.digistore24.com/redir/736588/johnpr/"
+             target="_blank" rel="nofollow sponsored noopener">
+            Details zum Paket ansehen →
+          </a>
+        </div>
+
+        <div class="resource-stack">
+
+          <div class="resource">
+            <div class="resource-number">01</div>
+            <div>
+              <h3>Der Pinterest Guide</h3>
+              <p>
+                53 Seiten Lernmaterial für deinen Einstieg in Pinterest
+                und die Beschäftigung mit Pinterest Marketing.
+              </p>
+            </div>
+          </div>
+
+          <div class="resource">
+            <div class="resource-number">02</div>
+            <div>
+              <h3>Das praktische Workbook</h3>
+              <p>
+                Sieben Arbeitsblätter, mit denen du deine Überlegungen
+                festhalten und deine Pinterest Planung strukturieren kannst.
+              </p>
+            </div>
+          </div>
+
+          <div class="resource">
+            <div class="resource-number">03</div>
+            <div>
+              <h3>Editierbare Pin-Vorlagen</h3>
+              <p>
+                Sechs Pin-Layouts als Grundlage für die Gestaltung
+                eigener Pinterest Inhalte.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="section-heading">
+          <h2>Für wen ist diese Pinterest Anleitung geeignet?</h2>
+          <p>
+            Das Paket kann besonders interessant sein, wenn du Pinterest
+            systematischer kennenlernen und deine Content-Erstellung
+            bewusster organisieren möchtest.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-item">✓ Pinterest für Anfänger</div>
+          <div class="audience-item">✓ Blogger und Content Creator</div>
+          <div class="audience-item">✓ Selbstständige und kleine Unternehmen</div>
+          <div class="audience-item">✓ Menschen, die Pinterest Vorlagen suchen</div>
+          <div class="audience-item">✓ Website-Betreiber, die Pinterest Traffic erkunden</div>
+          <div class="audience-item">✓ Alle, die einen Pinterest Content Plan entwickeln möchten</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="soft-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <h2>Deine Pinterest Strategie Schritt für Schritt planen</h2>
+          <p>
+            Pinterest Marketing ist ein Prozess. Eine gute Vorbereitung
+            kann dir helfen, deine Themen, Designs und Inhalte übersichtlicher
+            zu organisieren.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+
+          <article class="card">
+            <h3>1. Grundlagen kennenlernen</h3>
+            <p>
+              Verschaffe dir einen Überblick über Pinterest und überlege,
+              welche Inhalte zu deinem Projekt oder Unternehmen passen.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>2. Ideen und Inhalte planen</h3>
+            <p>
+              Nutze deine Planung, um Themen zu sammeln und einen
+              nachvollziehbaren Content-Ablauf vorzubereiten.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>3. Eigene Pins gestalten</h3>
+            <p>
+              Nutze geeignete Layouts als Ausgangspunkt und passe deine
+              Designs an deine Inhalte und deine visuelle Identität an.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+
+        <h2>Möchtest du Pinterest besser verstehen und strukturierter nutzen?</h2>
+
+        <p>
+          Sieh dir das Pinterest-Paket an und prüfe, ob Guide, Workbook
+          und Pin-Vorlagen zu deinen aktuellen Zielen passen.
+        </p>
+
+        <a class="cta"
+           href="https://www.digistore24.com/redir/736588/johnpr/"
+           target="_blank" rel="nofollow sponsored noopener">
+          Zum Pinterest-Paket →
+        </a>
+
+        <p class="small-note">
+          Weitere Informationen und aktuelle Konditionen findest du auf der Angebotsseite.
+        </p>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="section-heading">
+          <h2>Häufige Fragen zum Pinterest-Paket</h2>
+        </div>
+
+        <div class="faq">
+
+          <div class="faq-item">
+            <h3>Ist das Paket für Pinterest Anfänger geeignet?</h3>
+            <p>
+              Das Paket richtet sich unter anderem an Menschen, die Pinterest
+              kennenlernen und ihre Planung und Pin-Erstellung strukturieren möchten.
+              Prüfe die Angebotsdetails, um festzustellen, ob die Inhalte zu deinem
+              Kenntnisstand passen.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Welche Materialien sind enthalten?</h3>
+            <p>
+              Zum beschriebenen Paket gehören ein 53-seitiger Guide,
+              ein Workbook mit sieben Arbeitsblättern und sechs editierbare
+              Pin-Layouts. Einzelheiten findest du auf der Angebotsseite.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Kann das Paket mehr Pinterest Traffic garantieren?</h3>
+            <p>
+              Nein. Lernmaterialien und Vorlagen können bei der Planung helfen,
+              garantieren jedoch weder mehr Reichweite noch Besucher, Verkäufe
+              oder Einnahmen. Ergebnisse hängen unter anderem von Inhalten,
+              Zielgruppe und Umsetzung ab.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Wo kann ich Preis und Kaufbedingungen einsehen?</h3>
+            <p>
+              Die aktuellen Preise, Zahlungsbedingungen und weiteren Details
+              werden auf der offiziellen Angebotsseite angezeigt.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">PIN WISE · Pinterest Wissen & Strategie</div>
+
+      <p>
+        <strong>Affiliate-Hinweis:</strong>
+        Diese Seite enthält Affiliate-Links. Wenn du über einen solchen Link
+        einkaufst, kann ich eine Provision erhalten. Fü
