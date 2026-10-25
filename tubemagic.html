@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TubeMagic AI YouTube Tools | Scripts, Keywords & YouTube SEO</title>
+<meta name="description" content="Explore TubeMagic AI YouTube tools for video scripts, keyword research, video ideas, titles, thumbnails, and YouTube SEO workflows.">
+<meta name="keywords" content="AI YouTube tools, AI YouTube script generator, YouTube SEO tools, YouTube keyword research tool, YouTube video idea generator, YouTube script writer AI, YouTube title generator, YouTube thumbnail generator, YouTube automation tools, AI tools for YouTube creators">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#080d19">
+
+<style>
+:root {
+  --bg:#080d19;
+  --panel:#111a2e;
+  --text:#f5f7fb;
+  --muted:#b8c2d7;
+  --gold:#f2c66d;
+  --gold2:#ffe4a4;
+  --line:rgba(255,255,255,.12);
+  --green:#8ce0bd;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(ellipse at 80% 0%,rgba(87,105,190,.22),transparent 38%),
+    radial-gradient(ellipse at 0% 32%,rgba(242,198,109,.08),transparent 32%),
+    var(--bg);
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.65;
+}
+a { color:inherit; }
+.wrap { width:min(1120px,calc(100% - 36px)); margin:0 auto; }
+header { padding:22px 0; border-bottom:1px solid var(--line); }
+.brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.04em; }
+.brand-mark {
+  display:grid; place-items:center; width:44px; height:44px;
+  border-radius:14px; color:#111827; font-size:20px; font-weight:900;
+  background:linear-gradient(135deg,var(--gold2),#d89c3b);
+}
+.brand small {
+  display:block; color:var(--muted); font-size:11px;
+  letter-spacing:.18em; text-transform:uppercase; font-weight:600;
+}
+.hero { padding:76px 0 68px; }
+.hero-grid {
+  display:grid; grid-template-columns:1.15fr .85fr;
+  gap:44px; align-items:center;
+}
+.eyebrow {
+  display:inline-flex; border:1px solid rgba(242,198,109,.34);
+  background:rgba(242,198,109,.08); color:var(--gold2);
+  border-radius:999px; padding:7px 13px; font-size:12px;
+  font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+}
+h1 {
+  font-size:clamp(2.35rem,5vw,4.25rem);
+  line-height:1.08; letter-spacing:-.045em; margin:22px 0;
+}
+h1 span { color:var(--gold); }
+.lead { color:var(--muted); font-size:clamp(1.03rem,2vw,1.2rem); }
+.actions { display:flex; flex-wrap:wrap; gap:13px; margin-top:28px; }
+.btn {
+  display:inline-flex; justify-content:center; align-items:center;
+  gap:8px; padding:14px 20px; border-radius:12px;
+  font-weight:800; text-decoration:none; transition:.2s;
+}
+.btn:hover { transform:translateY(-2px); filter:brightness(1.05); }
+.btn-primary {
+  background:linear-gradient(135deg,var(--gold2),#e4ad4d);
+  color:#161a26; box-shadow:0 12px 30px rgba(226,173,77,.18);
+}
+.btn-secondary { border:1px solid var(--line); background:rgba(255,255,255,.035); }
+.note { color:#8f9bb3; font-size:.85rem; margin-top:13px; }
+.visual {
+  position:relative; padding:24px; border:1px solid var(--line);
+  border-radius:26px;
+  background:linear-gradient(145deg,rgba(26,39,66,.96),rgba(13,19,34,.96));
+  box-shadow:0 24px 70px rgba(0,0,0,.3); overflow:hidden;
+}
+.visual:before {
+  content:""; position:absolute; width:220px; height:220px;
+  right:-75px; top:-90px; background:rgba(242,198,109,.16);
+  border-radius:50%;
+}
+.visual-top {
+  display:flex; justify-content:space-between; align-items:center;
+  gap:12px; position:relative;
+}
+.pill { border:1px solid var(--line); border-radius:999px; padding:5px 10px; color:var(--muted); font-size:12px; }
+.screen {
+  margin-top:20px; padding:18px; border-radius:17px;
+  background:linear-gradient(140deg,#273b61,#111a2d 65%);
+  border:1px solid rgba(255,255,255,.1);
+}
+.play {
+  width:54px; height:54px; display:grid; place-items:center;
+  border-radius:50%; color:#111827; background:var(--gold);
+  font-size:20px; margin-bottom:20px;
+}
+.fake-lines { display:grid; gap:9px; }
+.fake-lines i { display:block; height:8px; border-radius:20px; background:rgba(255,255,255,.16); }
+.fake-lines i:nth-child(1) { width:88%; background:rgba(242,198,109,.65); }
+.fake-lines i:nth-child(2) { width:66%; }
+.fake-lines i:nth-child(3) { width:78%; }
+.workflow { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:15px; }
+.workflow div {
+  background:rgba(255,255,255,.055); border:1px solid var(--line);
+  padding:12px 8px; border-radius:12px; text-align:center;
+  font-size:12px; color:var(--muted);
+}
+.workflow b { display:block; color:var(--gold2); font-size:15px; }
+section { padding:68px 0; }
+.section-head { max-width:740px; margin:0 auto 34px; text-align:center; }
+.kicker { color:var(--gold); text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:800; }
+h2 { font-size:clamp(1.8rem,4vw,2.7rem); letter-spacing:-.03em; line-height:1.2; margin:12px 0 14px; }
+.section-head p,.muted { color:var(--muted); }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.card {
+  padding:24px; border-radius:18px; border:1px solid var(--line);
+  background:linear-gradient(150deg,rgba(23,35,59,.88),rgba(15,22,39,.88));
+}
+.icon {
+  display:grid; place-items:center; width:46px; height:46px;
+  border-radius:14px; background:rgba(242,198,109,.12);
+  color:var(--gold2); font-size:22px; margin-bottom:17px;
+}
+h3 { font-size:1.16rem; line-height:1.3; margin:0 0 10px; }
+.card p { margin:0; color:var(--muted); font-size:.96rem; }
+.split { display:grid; grid-template-columns:.9fr 1.1fr; gap:36px; align-items:start; }
+.feature-list { display:grid; gap:14px; }
+.feature {
+  display:flex; gap:13px; padding:17px; border-radius:14px;
+  background:rgba(255,255,255,.035); border:1px solid var(--line);
+}
+.check { color:var(--green); font-weight:900; font-size:20px; }
+.feature strong { display:block; margin-bottom:3px; }
+.feature span:last-child { color:var(--muted); font-size:.94rem; }
+.band {
+  border-block:1px solid var(--line);
+  background:linear-gradient(100deg,rgba(242,198,109,.055),rgba(87,105,190,.09));
+}
+.steps { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; counter-reset:step; }
+.step {
+  padding:25px; border:1px solid var(--line); border-radius:17px;
+  background:rgba(10,15,29,.45); counter-increment:step;
+}
+.step:before {
+  content:"0" counter(step); display:block; color:var(--gold);
+  font-weight:900; font-size:1.5rem; margin-bottom:12px;
+}
+.step p { color:var(--muted); margin-bottom:0; }
+.faq { max-width:850px; margin:0 auto; }
+details { border-bottom:1px solid var(--line); padding:18px 0; }
+summary { cursor:pointer; font-weight:750; }
+details p { color:var(--muted); margin-bottom:0; }
+.final-cta {
+  text-align:center; padding:42px; border:1px solid rgba(242,198,109,.25);
+  border-radius:24px;
+  background:linear-gradient(135deg,rgba(242,198,109,.1),rgba(87,105,190,.1));
+}
+.final-cta p { color:var(--muted); max-width:650px; margin:0 auto 22px; }
+footer { padding:30px 0 38px; border-top:1px solid var(--line); color:#96a1b8; font-size:.86rem; }
+.footer-inner { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.disclosure { max-width:800px; margin-top:14px; }
+@media(max-width:820px) {
+  .hero-grid,.split { grid-template-columns:1fr; }
+  .hero { padding:52px 0; }
+  .visual { max-width:580px; width:100%; margin:0 auto; }
+  .cards { grid-template-columns:repeat(2,1fr); }
+  .steps { grid-template-columns:1fr; }
+}
+@media(max-width:560px) {
+  .wrap { width:min(100% - 28px,1120px); }
+  .cards { grid-template-columns:1fr; }
+  section { padding:50px 0; }
+  .final-cta { padding:28px 18px; }
+  .actions .btn { width:100%; }
+  .workflow div { padding:10px 5px; font-size:11px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="wrap brand">
+    <div class="brand-mark">T</div>
+    <div>TUBE CREATOR GUIDE<small>AI YouTube tools &amp; strategy</small></div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Smarter YouTube workflows</div>
+      <h1>Explore <span>TubeMagic</span> AI YouTube Tools for Scripts, Keywords &amp; SEO</h1>
+      <p class="lead">Researching AI tools for YouTube creators? Explore TubeMagic as a potential way to support video ideas, script writing, keyword research, titles, descriptions, and your broader YouTube content workflow.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://tubemagic.com/ds#aff=johnpr" target="_blank" rel="sponsored nofollow noopener">Explore TubeMagic ↗</a>
+        <a class="btn btn-secondary" href="#features">Explore the features</a>
+      </div>
+      <p class="note">Check the current plan details, available tools, and terms on the official website before purchasing.</p>
+    </div>
+
+    <aside class="visual" aria-label="Illustration of a YouTube content workflow">
+      <div class="visual-top"><strong>YouTube content workflow</strong><span class="pill">AI-assisted</span></div>
+      <div class="screen">
+        <div class="play" aria-hidden="true">▶</div>
+        <div class="fake-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <div class="workflow">
+        <div><b>01</b>Research</div>
+        <div><b>02</b>Write</div>
+        <div><b>03</b>Optimize</div>
+      </div>
+      <p class="note">Illustrative graphic only; not a screenshot of the TubeMagic interface.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Tools to investigate</div>
+      <h2>AI YouTube Tools for Your Content Workflow</h2>
+      <p>TubeMagic is promoted as a set of AI tools for YouTube creators. The exact features and availability can vary by plan, so use the official product page to confirm what is included.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="icon">✎</div>
+        <h3>AI YouTube Script Generator</h3>
+        <p>Explore AI-assisted script writing to help structure video concepts, develop outlines, and create a first draft for your own editing.</p>
+      </article>
+      <article class="card">
+        <div class="icon">⌕</div>
+        <h3>YouTube Keyword Research</h3>
+        <p>Investigate search terms and topic ideas to help plan content around what your intended audience may be looking for.</p>
+      </article>
+      <article class="card">
+        <div class="icon">▤</div>
+        <h3>Video Idea Generation</h3>
+        <p>Use structured brainstorming to explore possible topics, series, and angles for your YouTube content calendar.</p>
+      </article>
+      <article class="card">
+        <div class="icon">T</div>
+        <h3>YouTube Title &amp; Description Ideas</h3>
+        <p>Generate and refine title and description drafts while keeping them accurate, relevant, and aligned with the actual video.</p>
+      </article>
+      <article class="card">
+        <div class="icon">▧</div>
+        <h3>Thumbnail Planning</h3>
+        <p>Explore ideas for video thumbnails and packaging. Check the product page for the precise thumbnail-related tools offered.</p>
+      </article>
+      <article class="card">
+        <div class="icon">↗</div>
+        <h3>YouTube SEO Workflow</h3>
+        <p>Bring research, planning, and optimization into a more consistent process without treating any tool as a guarantee of rankings.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Who may find it useful?</div>
+      <h2>A Tool to Consider for YouTube Creators</h2>
+      <p class="muted">The best YouTube automation tools support your process while leaving room for human judgment, originality, fact-checking, and audience understanding.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://tubemagic.com/ds#aff=johnpr" target="_blank" rel="sponsored nofollow noopener">View the Official Offer ↗</a>
+      </div>
+    </div>
+    <div class="feature-list">
+      <div class="feature"><span class="check">✓</span><div><strong>New YouTube creators</strong><span>People learning about YouTube SEO tools, keyword research, and planning a first set of videos.</span></div></div>
+      <div class="feature"><span class="check">✓</span><div><strong>Established channels</strong><span>Creators looking to organize research, brainstorming, and script preparation more consistently.</span></div></div>
+      <div class="feature"><span class="check">✓</span><div><strong>Faceless YouTube channels</strong><span>Creators researching AI tools that may support topic development and script drafting for videos that do not feature them on camera.</span></div></div>
+      <div class="feature"><span class="check">✓</span><div><strong>Content teams and marketers</strong><span>People comparing AI tools for YouTube content planning, metadata drafts, and repeatable workflows.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">A practical checklist</div>
+      <h2>How to Evaluate YouTube SEO Tools</h2>
+      <p>Before choosing an AI YouTube tool, focus on fit, workflow, and the current terms—not just marketing claims.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><h3>Confirm the included features</h3><p>Check which tools are included in the plan, along with usage limits, supported languages, and any additional costs.</p></article>
+      <article class="step"><h3>Match tools to your process</h3><p>Decide whether you need script writing, keyword research, video ideas, title drafting, thumbnail planning, or a combination.</p></article>
+      <article class="step"><h3>Review the terms</h3><p>Confirm current pricing, billing frequency, cancellation details, and refund terms directly with the seller before purchasing.</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Frequently asked questions</div>
+      <h2>TubeMagic: Common Questions</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>What is TubeMagic?</summary>
+        <p>TubeMagic is marketed as an AI toolset for YouTube creators. Visit the official website to review the current product description, available features, and plans.</p>
+      </details>
+      <details>
+        <summary>Can TubeMagic help with YouTube scripts and video ideas?</summary>
+        <p>The product is promoted around AI-assisted YouTube content workflows. Check the official plan details to confirm which script-writing and idea-generation features are currently included.</p>
+      </details>
+      <details>
+        <summary>Can AI YouTube tools improve SEO?</summary>
+        <p>AI tools can help with research and drafting, but search visibility depends on many factors, including relevance, viewer satisfaction, competition, video quality, and how viewers respond.</p>
+      </details>
+      <details>
+        <summary>Is TubeMagic suitable for a new channel?</summary>
+        <p>It may be worth evaluating if you are learning about YouTube content planning or SEO. Compare the features, price, and learning curve with your actual needs and budget.</p>
+      </details>
+      <details>
+        <summary>Does TubeMagic guarantee views, subscribers, or income?</summary>
+        <p>No tool can guarantee views, subscribers, rankings, sales, or income. Results vary and depend on the content, audience, competition, and many other factors.</p>
+      </details>
+      <details>
+        <summary>Where can I find the current price and terms?</summary>
+        <p>Check the official TubeMagic page for current pricing, payment options, access conditions, cancellation details, and any refund policy. Terms may change over time.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="final-cta">
+      <div class="kicker">Learn more</div>
+      <h2>Explore TubeMagic for Your YouTube Workflow</h2>
+      <p>Review the current features and terms on the official website, then decide whether TubeMagic matches your channel goals, working style, and budget.</p>
+      <a class="btn btn-primary" href="https://tubemagic.com/ds#aff=johnpr" target="_blank" rel="sponsored nofollow noopener">Visit TubeMagic ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner"><strong>Tube Creator Guide</strong><span>Independent informational page</span></div>
+    <p class="disclosure"><strong>Affiliate disclosure:</strong> This page contains an affiliate link. If you choose to purchase through it, the page owner may receive a commission at no additional cost to you. This does not guarantee any particular result or imply that every feature is suitable for every user.</p>
+    <p class="disclosure">TubeMagic is a third-party product and its name belongs to its respective owner. This is not the official TubeMagic website. Features, prices, availability, and terms can change; confirm details directly with the seller before purchasing.</p>
+  </div>
+</footer>
+</body>
+</html>
