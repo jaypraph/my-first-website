@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Lost Superfoods | Survival Food & Long-Term Food Storage</title>
+
+  <meta name="description" content="Explore The Lost Superfoods, a guide to traditional survival foods, long-term food storage, food preservation methods, and emergency food planning.">
+
+  <meta name="keywords" content="survival food, long term food storage, emergency food supply, long lasting food, food preservation methods, survival food list, emergency food storage, traditional survival foods, food stockpile">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#14251d">
+
+  <meta property="og:title" content="The Lost Superfoods — A Guide to Survival Food">
+  <meta property="og:description" content="Discover traditional food preservation ideas and practical inspiration for building a more organized food stockpile.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --forest: #14251d;
+      --forest-light: #203a2d;
+      --cream: #f7f3e9;
+      --paper: #fffdf7;
+      --gold: #d6b56d;
+      --gold-dark: #a98740;
+      --text: #26342b;
+      --muted: #667168;
+      --border: #e5dfd1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--forest);
+      color: #fff;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(214,181,109,.4);
+    }
+
+    .brand {
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at top right, rgba(214,181,109,.16), transparent 45%),
+        linear-gradient(135deg, #14251d, #294333);
+      color: white;
+      padding: 82px 0 76px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 20px auto;
+      font-size: clamp(36px, 6vw, 61px);
+      font-weight: normal;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+      color: #e7e9e2;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: #18251c;
+      text-decoration: none;
+      padding: 15px 24px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background .2s, transform .2s;
+    }
+
+    .button:hover {
+      background: #e8cc8d;
+      transform: translateY(-2px);
+    }
+
+    .small-note {
+      font-size: 12px !important;
+      color: #c9d1ca !important;
+      margin-top: 15px !important;
+    }
+
+    .trust-strip {
+      background: #eae3d3;
+      padding: 18px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #3e4b40;
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      text-align: center;
+      margin: 0 auto 35px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(29px, 4vw, 42px);
+      font-weight: normal;
+      margin: 12px 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--paper);
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .card .number {
+      color: var(--gold-dark);
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      font-weight: normal;
+      margin: 12px 0;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    .dark-section {
+      background: var(--forest);
+      color: white;
+    }
+
+    .dark-section .section-heading p {
+      color: #d0d8d0;
+    }
+
+    .dark-section .card {
+      background: var(--forest-light);
+      border-color: #385142;
+      color: white;
+    }
+
+    .dark-section .card p {
+      color: #d0d8d0;
+    }
+
+    .checklist {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .check-item {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 17px;
+    }
+
+    .check-item strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .check-item span {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .book-section {
+      background: #eee7d8;
+    }
+
+    .book-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .book-content h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      font-weight: normal;
+    }
+
+    .book-content p {
+      color: #515e53;
+    }
+
+    .notice {
+      margin-top: 24px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    details {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 12px;
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .final-cta {
+      background: linear-gradient(135deg, #203a2d, #14251d);
+      text-align: center;
+      color: white;
+      padding: 65px 20px;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: normal;
+      margin-top: 0;
+    }
+
+    .final-cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #dbe2db;
+    }
+
+    footer {
+      background: #101b15;
+      color: #c9d1ca;
+      padding: 28px 0;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    .disclosure {
+      border-top: 1px solid #344339;
+      margin-top: 18px;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        padding: 60px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .checklist {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+
+      .button {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">The Prepared Pantry</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Traditional Knowledge • Practical Preparation</div>
+
+        <h1>The Lost Superfoods: Explore Survival Food and Long-Term Food Storage</h1>
+
+        <p>
+          Discover traditional survival foods, forgotten food preservation methods,
+          and ideas to help you plan a more organized emergency food supply.
+        </p>
+
+        <a
+          class="button"
+          href="https://ultimatesurvivalfoods.com/book/#aff=johnpr"
+          target="_blank"
+          rel="sponsored nofollow noopener"
+        >
+          Explore The Lost Superfoods
+        </a>
+
+        <p class="small-note">
+          Visit the official product page to review the book, available formats,
+          current price, and purchase terms.
+        </p>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      An informational introduction to food storage, traditional recipes, and emergency preparedness.
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Discover the subject</div>
+          <h2>A Different Perspective on Survival Food</h2>
+          <p>
+            Emergency food planning is not only about buying canned goods.
+            It can also involve learning about traditional recipes, storage
+            practices, and how to organize a household pantry.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="number">01 / FOOD KNOWLEDGE</div>
+            <h3>Traditional Survival Foods</h3>
+            <p>
+              Explore historical foods and recipes that people used to preserve
+              and carry nourishment through challenging conditions.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="number">02 / STORAGE PLANNING</div>
+            <h3>Long-Term Food Storage</h3>
+            <p>
+              Learn why food selection, packaging, storage conditions, and
+              rotation matter when building an organized food stockpile.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="number">03 / PRACTICAL SKILLS</div>
+            <h3>Food Preservation Methods</h3>
+            <p>
+              Discover preservation concepts and traditional techniques
+              that can help expand your food preparation knowledge.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">What the guide covers</div>
+          <h2>Explore the Ideas Behind The Lost Superfoods</h2>
+          <p>
+            The official sales page describes a guide featuring more than
+            126 foods and storage ideas, with illustrated instructions.
+            Review the publisher's page for the complete details.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Forgotten Food Ideas</h3>
+            <p>
+              Discover examples of traditional foods and recipes that may
+              broaden your understanding of emergency food options.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Step-by-Step Guidance</h3>
+            <p>
+              The book is presented with instructions and color illustrations
+              to help readers explore the techniques described.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Food Stockpile Planning</h3>
+            <p>
+              Explore ideas for selecting, organizing, and planning a household
+              food supply based on your own needs and circumstances.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Build your knowledge</div>
+          <h2>Emergency Food Supply: Points to Consider</h2>
+          <p>
+            If you're researching a survival food list or planning a home pantry,
+            these are useful areas to understand before making decisions.
+          </p>
+        </div>
+
+        <div class="checklist">
+          <div class="check-item">
+            <strong>Food shelf life</strong>
+            <span>Check reliable storage guidance for each specific food.</span>
+          </div>
+
+          <div class="check-item">
+            <strong>Safe storage conditions</strong>
+            <span>Consider temperature, moisture, packaging, and contamination.</span>
+          </div>
+
+          <div class="check-item">
+            <strong>Nutrition and variety</strong>
+            <span>Plan for a balanced supply suited to household requirements.</span>
+          </div>
+
+          <div class="check-item">
+            <strong>Food rotation</strong>
+            <span>Track dates and use products according to their labels.</span>
+          </div>
+
+          <div class="check-item">
+            <strong>Water and preparation</strong>
+            <span>Consider safe water, cooking needs, and available equipment.</span>
+          </div>
+
+          <div class="check-item">
+            <strong>Trusted preservation guidance</strong>
+            <span>Use tested food-safety methods, especially for home canning.</span>
+          </div>
+        </div>
+
+        <p class="notice" style="text-align:center">
+          Food preservation methods are not interchangeable. Follow tested
+          safety instructions; never assume a homemade food is shelf-stable
+          without a validated process.
+        </p>
+      </div>
+    </section>
+
+    <section class="book-section">
+      <div class="container">
+        <div class="book-content">
+          <div class="eyebrow">Learn more about the book</div>
+          <h2>Is The Lost Superfoods Right for Your Research?</h2>
+
+          <p>
+            If you're interested in survival food, long-lasting food ideas,
+            traditional food preservation, or emergency pantry planning,
+            you can review the book's contents and decide whether it fits
+            your interests.
+          </p>
+
+          <p>
+            The publisher's website provides further information about the
+            book, available purchase options, and any included extras.
+            Check the current offer and terms directly before ordering.
+          </p>
+
+          <a
+            class="button"
+            href="https://ultimatesurvivalfoods.com/book/#aff=johnpr"
+            target="_blank"
+            rel="sponsored nofollow noopener"
+          >
+            View the Official Book Details
+          </a>
+
+          <p class="notice">
+            This is an independent informational page, not the official
+            publisher website.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Common questions</div>
+          <h2>Survival Food and Food Storage FAQs</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>What is The Lost Superfoods?</summary>
+            <p>
+              It is a book presented as a collection of traditional food
+              recipes, long-lasting food ideas, and storage-related techniques.
+              Visit the official page for the full contents and offer details.
+            </p>
+          </details>
+
+          <details>
+            <summary>What does long-term food storage mean?</summary>
+            <p>
+              It means planning how food is selected, packaged, stored, and
+              rotated over time. Actual shelf life depends on the food,
+              packaging, processing, and storage conditions.
+            </p>
+          </details>
+
+          <details>
+            <summary>Are all foods safe to store without refrigeration?</summary>
+            <p>
+              No. Some foods require refrigeration or other carefully controlled
+              preservation processes. Always follow tested food-safety guidance
+              for the specific food and method.
+            </p>
+          </details>
+
+          <details>
+            <summary>Where can I see the book's price and contents?</summary>
+            <p>
+              Use the link on this page to visit the official product website.
+              Confirm the current price, format, included materials, shipping
+              details if applicable, and refund terms before purchasing.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does buying this book guarantee emergency readiness?</summary>
+            <p>
+              No. A book can provide information, but emergency readiness also
+              depends on safe practices, appropriate supplies, household needs,
+              and reliable preparation.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <div class="eyebrow">Explore the guide</div>
+        <h2>Discover Traditional Survival Food Knowledge</h2>
+        <p>
+          Take a closer look at The Lost Superfoods and review the book's
+          contents to see whether its approach to food preservation and
+          long-term food storage is useful for you.
+        </p>
+
+        <a
+          class="button"
+          href="https://ultimatesurvivalfoods.com/book/#aff=johnpr"
+          target="_blank"
+          rel="sponsored nofollow noopener"
+        >
+          Visit the Official Website
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>The Prepared Pantry</strong></p>
+      <p>
+        Independent informational content about food storage, traditional
+        recipes, and emergency preparedness.
+      </p>
+
+      <div class="disclosure">
+        <strong>Affiliate Disclosure:</strong>
+        Some links on this page are affiliate links. If you purchase through
+        them, the page owner may earn a commission at no additional cost to you.
+        This page is independently operated and is not the official
+        The Lost Superfoods website.
+      </div>
+
+      <p>
+        <strong>Important:</strong> This content is for general informational
+        purposes and is not a substitute for tested food-safety instructions.
+        Product details, availability, and terms may change.
+      </p>
+
+      <p>© <span id="year">2026</span> The Prepared Pantry.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
